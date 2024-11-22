@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet xmlns:fo="http://www.w3.org/1999/XSL/Format" type="text/xsl" href="C:\Users\Backa\Desktop\PDF format\VIL_XSLFO.xsl"?>
+
+<!DOCTYPE catalogue SYSTEM "C:\Users\Backa\Desktop\PDF format\VIL_DTD.dtd"[
+	<!ENTITY GreatGatsby SYSTEM "images/GreatGatsby.jpg" NDATA jpg>
+	<!ENTITY Sidharta SYSTEM "images/Sidharta.jpg" NDATA jpg>
+	<!ENTITY Bulgarian SYSTEM "images/Bulgarian.jpg" NDATA jpg>
+	<!ENTITY AliveMySoundtrack SYSTEM "images/AliveMySoundtrack.jpg" NDATA jpg>
+	<!ENTITY DefLeppardDrasticSymphoniesTape SYSTEM "images/DefLeppardDrasticSymphoniesTape.jpg" NDATA jpg>
+	<!ENTITY SigurRos SYSTEM "images/SigurRos.jpg" NDATA jpg>
+	<!ENTITY Murakami SYSTEM "images/Murakami.jpg" NDATA jpg>
+	<!ENTITY JanisJoplin SYSTEM "images/JanisJoplin.jpg" NDATA jpg>
+]>
+
+<catalogue>
+<!--==========================Types=================================-->
+	<types>
+		<type typeID = "B">
+			<typeName> Книга </typeName>
+		</type>
+		<type typeID = "S" >
+			<typeName>  Списание </typeName>
+		</type>
+		<type typeID = "D" >
+			<typeName>  Диск </typeName>	
+		</type>	
+		<type typeID = "K" >
+			<typeName>  Касета </typeName>	
+		</type>	
+		<type typeID = "V" >
+			<typeName>  Плоча </typeName>	
+		</type>	
+	</types>
+	
+<!--==========================LibraryResources======================-->	
+
+<libraryResourceList>
+	<libraryResource  typeRef = "B" id = "GreatGatsby"> 
+				 <name>Великият Гетсби</name>
+	             <typeName>Книга</typeName>
+				 <author>Ф.Скот Фицджералд</author>
+				 <yearOfPublication>2021</yearOfPublication>
+				 <publisher>Знаци</publisher> 
+				 <genre>Любовен роман</genre>
+				 <numOfPages>260</numOfPages>
+				 <language>Български</language>
+				 <description>„Великият Гетсби” е върховно постижение в творчеството на Ф. Скот Фицджералд.
+				 Това е историята на баснословно богатия Джей Гетсби и обсебващата му любов към красивата Дейзи Бюканън, 
+				 която с неизбежността на древногръцка трагедия върви към своя неумолим финал. Това е също
+				 и лиричен разказ за Епохата на джаза с целият й блясък и декаданс;
+				 за пищните партита на Лонг Айлънд от 20-те години на миналия век;
+				 за разгулни компании, разюздани мечти, алчност, амбиции и пари. 
+				 </description>
+				 	 
+				 <owner>Virtual Internet/intranet Library</owner>
+				 <status>Свободно</status>
+				 <loanTerm>1 месец</loanTerm>
+				 
+				 <image href="GreatGatsby"/>	 
+	</libraryResource>
+		 
+	 
+	<libraryResource  typeRef = "B" id="Sidharta">
+				 <name>Сидхарта</name>
+	             <typeName>Книга</typeName>
+				 <author>Херман Хесе</author>
+				 <yearOfPublication>2023</yearOfPublication>
+				 <publisher>Фама</publisher>
+				 <genre>Роман за съзряването</genre>
+				 <numOfPages>180</numOfPages>
+				 <language>Български</language>
+				 <description>Думата „сидхарта“ се състои от две думи в санскритския
+				 - „сидха“ (постигам) + „арта“ (това, което е търсено).
+				 Заедно те означават „онзи, който откри смисъла на съществуването“ 
+				 или „онзи, който постигна целите си“. Това е историята на принц Сидхарта Гаутама
+				 , неговия път към прераждането. Историята на Буда преди Буда изпод перото на Херман Хесе.
+				 </description>
+				 
+				 <owner>Virtual Internet/intranet Library</owner>
+				 <status>Заето</status>
+				 <loanTerm>1 месец</loanTerm>
+				 <borrower>Иван Иванов</borrower>
+                 <borrowDate>2023-11-15</borrowDate>
+                 <returnDate>2023-12-15</returnDate>
+				
+				 <image href="Sidharta"/> 
+	</libraryResource>
+		 
+	<libraryResource  typeRef = "S" id="Bulgarian">
+				 <name>Българска наука</name>
+				 <typeName>Списание</typeName>
+				 <author>Колектив</author>
+				 <yearOfPublication>2022</yearOfPublication>
+				 <publisher>Сдружение „Форум наука“</publisher>
+				 <genre>Научно списание</genre>
+				 <language>Български</language>
+				 <number>165</number>
+				 <description>В новия брой на списание Българска Наука ще разгледаме потенциала
+				 на възобновяемите енергийни източници, като зелен водород, фотоволтаици,
+				 вятърни турбини, ПАВЕЦ-и, както и перспективите за приложението им в България.
+				 </description>
+				  
+				 <owner>Virtual Internet/intranet Library</owner>
+				 <status>Заето</status>
+				 <loanTerm>1 месец</loanTerm>
+				 <borrower>Мая Петрова</borrower>
+                 <borrowDate>2023-08-01</borrowDate>
+                 <returnDate>2023-08-17</returnDate>
+				 
+				 <image href="Bulgarian"/>		 
+	</libraryResource>
+
+	<libraryResource  typeRef = "D" id="AliveMySoundtrack">
+				 <name>Alive My Soundtrack</name>
+				 <typeName>Диск</typeName>
+				 <author>David Garrett</author>
+				 <yearOfPublication>2020</yearOfPublication>
+				 <performer>David Garrett</performer>
+				 <genre>Експериментална музика</genre>
+				 <description>Световнопризнатият цигулар и звезда на съвременната класическа музика,
+				 David Garrett, представя новия си албум “Alive - My Soundtrack”.Албумът е лична селекция на Garrett
+				 с най-любимите му саундтрак мелодии.В траклиста на стандартното CD са включени 16 песни,
+				 a в двойното делукс издание – 24. 
+				 </description>
+				 	 
+				 <owner>Virtual Internet/intranet Library</owner>
+				 <status>Заето</status>
+				 <loanTerm>1 месец</loanTerm>
+				 <borrower>Петя Рачева</borrower>
+                 <borrowDate>2023-10-26</borrowDate>
+                 <returnDate>2023-10-31</returnDate>
+                 
+				 <image href="AliveMySoundtrack"/>	 
+	</libraryResource>
+
+	<libraryResource typeRef="K" id="DefLeppardDrasticSymphoniesTape">
+				<name>Def Leppard Drastic Symphonies Tape</name>
+				 <typeName>Касета</typeName>
+				 <author>Def Leppard</author>
+				 <yearOfPublication>2023</yearOfPublication>
+				 <publisher>Universal Music</publisher>
+				 <performer>Def Leppard, royal Philharmonic Orchestra</performer>
+				 <genre>Симфоничен рок</genre>
+				 <description>Списък с песни:
+				 1. Animal
+				 2. Have You Ever Needed Someone So Bad
+			     3. Gods Of War
+				 4. Paper Sun
+				 5. Love Bites
+				 6. Pour Some Sugar On Me
+				 7. Hysteria
+				 8. Turn To Dust
+				 9. Too Late For Love
+				 </description>
+				 
+				 <owner>Virtual Internet/intranet Library</owner>
+				 <status>Свободно</status>
+				 <loanTerm>1 месец</loanTerm>
+				 
+				 <image href="DefLeppardDrasticSymphoniesTape"/>
+	</libraryResource>
+
+	<libraryResource typeRef = "V" id="SigurRos">
+	             <name>Sigur Rós - Me? Su? I Eyrum Vi? Spilum Endalaust</name>
+				 <typeName>Плоча</typeName>
+				 <author>Sigur Rós</author>
+				 <yearOfPublication>2021</yearOfPublication>
+				 <publisher>Krunk</publisher>
+				 <performer>Sigur Rós</performer>
+				 <genre>Алтернативен/инди рок</genre>
+				 <description>Списък с песни:
+				 A1 Gobbledigook 3:05
+                 A2 Inní Mér Syngur Vitleysingur 4:05
+                 A3 Góðan Daginn 5:15
+                 A4 Við Spilum Endalaust 3:33
+                 B1 Festival 9:24
+                 B2 Með Suð Í Eyrum 4:56
+                 C1 Ára Bátur 8:57
+                 C2 Illgresi 4:13
+                 D1 Fljótavík 3:49
+                 D2 Straumnes 2:01
+                 D3 All Alright 6:21
+				 </description>
+				 
+				 <owner>Virtual Internet/intranet Library</owner>
+				 <status>Заето</status>
+				 <loanTerm>1 месец</loanTerm>
+				 <borrower>Цветина Стоянова</borrower>
+                 <borrowDate>2023-05-02</borrowDate>
+                 <returnDate>2023-05-10</returnDate>
+                 
+				<image href="SigurRos"/>
+	</libraryResource>
+</libraryResourceList>
+
+<foreignResourceList>
+     <foreignResource  typeRef = "B" id="Murakami">
+	             <name>Норвежка гора</name>
+				 <typeName>Книга</typeName>
+				 <author>Харуки Мураками</author>
+				 <yearOfPublication>2014</yearOfPublication>
+				 <publisher>Издателство „Колибри“</publisher>
+				 <genre>Световна литература</genre>
+				 <numOfPages>342</numOfPages>
+				 <language>Български</language>
+				 <description>С този изумителен елегичен роман, изпълнен с мистерия, мистицизъм,
+				 сюрреализъм и рокендрол, ексцентричният майстор на смесения жанр Мураками
+				 доказва, че може да играе по струните на нашата душевност със същия успех,
+				 както и Бийтълс с тяхната песен "Норвежка гора".
+				 </description>
+                 
+				 <owner>Книжарница "Колибри"</owner>
+				 <status>Заето</status>
+				 <loanTerm>1 месец</loanTerm>
+				 <borrower>Иван Иванов</borrower>
+				 <borrowDate>2023-11-15</borrowDate>
+                 <returnDate>2023-12-15</returnDate>
+                 
+                 <image href="Murakami"/>
+	</foreignResource>
+
+	<foreignResource  typeRef = "D" id="JanisJoplin">
+	             <name>Janis Joplin ‎- The Very Best Of</name>
+				 <typeName>Диск</typeName>
+				 <author>Джанис Джоплин</author>
+				 <yearOfPublication>2023</yearOfPublication>
+				 <publisher>Вирджиния рекърдс</publisher>
+				 <performer>Джанис Джоплин</performer>
+				 <genre>Блус рок</genre>
+				 <description>Списък с песни:
+				 1.Me and Bobby McGee
+                 2.Cry Baby
+                 3.Kozmic Blues
+                 4.Move Over
+                 5.Piece of My Heart
+                 6.Mercedes Benz
+                 7.Try (Just a Little Bit Harder)
+                 8.Get It While You Can
+                 9.Down on Me (Live)
+                 10.Ball and Chain (Live)
+                 11.Summer Time
+                 12.Mary Jane
+				 </description>
+				 
+				 <owner>Музикална компания "Вирджиния рекърдс"</owner>
+				 <status>Свободно</status>
+				 <loanTerm>1 месец</loanTerm>
+				 
+				 <image href="JanisJoplin"/>
+	</foreignResource>
+</foreignResourceList>
+
+<libraryCards>
+    <libraryCard>
+        <UserID>1677</UserID>
+        <!-- Заети чужди носители -->
+        <borrowedForeignResources>
+            <borrowedForeignResource>
+                <resourceID>537827</resourceID>
+                <owner>Книжарница „Колибри“</owner>
+                <borrowDate>2023-11-15</borrowDate>
+                <returnDate>2023-12-15</returnDate>
+            </borrowedForeignResource>
+        </borrowedForeignResources>
+
+        <!-- Заети собствени носители -->
+        <borrowedOwnResources>
+            <borrowedOwnResource>
+                <resourceID>537813</resourceID>
+                <borrower>Иван Иванов</borrower>
+                <borrowDate>2023-11-15</borrowDate>
+                <returnDate>2023-12-15</returnDate>
+            </borrowedOwnResource>
+        </borrowedOwnResources>
+    </libraryCard>
+	
+	<libraryCard>
+        <UserID>1679</UserID>
+        <!-- Заети собствени носители -->
+        <borrowedOwnResources>
+            <borrowedOwnResource>
+                <resourceID>537825</resourceID>
+                <borrower>Мая Петрова</borrower>
+                <borrowDate>2023-08-01</borrowDate>
+                <returnDate>2023-08-17</returnDate>
+            </borrowedOwnResource>
+				
+		    <borrowedOwnResource>
+                <resourceID>537819</resourceID>
+                <borrower>Мая Петрова</borrower>
+                <borrowDate>2023-08-17</borrowDate>
+                <returnDate>2023-08-27</returnDate>
+            </borrowedOwnResource>
+        </borrowedOwnResources>
+    </libraryCard>
+	
+	<libraryCard>
+        <UserID>1680</UserID>
+		<!-- Заети собствени носители -->
+		<borrowedOwnResources>
+		    <borrowedOwnResource>
+                <resourceID>537816</resourceID>
+                <borrower>Петя Рачева</borrower>
+                <borrowDate>2023-10-26</borrowDate>
+                <returnDate>2023-10-31</returnDate>
+            </borrowedOwnResource>
+        </borrowedOwnResources>
+	</libraryCard>
+</libraryCards>	
+
+<searchCatalogue>
+    <nameFilter></nameFilter>
+    <typeFilter></typeFilter>
+    <ownerFilter></ownerFilter>
+</searchCatalogue>
+
+</catalogue>

@@ -1,0 +1,53 @@
+<!ELEMENT catalogue (types, libraryResourceList, foreignResourceList, libraryCards, searchCatalogue)>
+
+<!ELEMENT types (type+)>
+<!ELEMENT type (typeName)>
+<!ELEMENT typeName (#PCDATA)>
+<!ATTLIST type typeID ID #REQUIRED>
+
+<!ELEMENT libraryResourceList (libraryResource+)>
+ <!ELEMENT libraryResource (name, typeName, author, yearOfPublication, (publisher?), (performer?), genre, (numOfPages?), (language?), (number?), description, owner, status, loanTerm, (borrower?), (borrowDate?), (returnDate?), image)>
+<!ATTLIST libraryResource typeRef IDREF #REQUIRED>
+<!ATTLIST libraryResource id ID #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT yearOfPublication (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT performer (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT numOfPages (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT owner (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT loanTerm (#PCDATA)>
+<!ELEMENT borrower (#PCDATA)>
+<!ELEMENT borrowDate (#PCDATA)>
+<!ELEMENT returnDate (#PCDATA)>
+
+<!ELEMENT foreignResourceList (foreignResource+)>
+<!ELEMENT foreignResource (name, typeName, author, yearOfPublication, publisher, (performer?), genre, (numOfPages?), (language?), (number?), description, owner, status, loanTerm, (borrower?), (borrowDate?), (returnDate?), image)>
+<!ATTLIST foreignResource typeRef IDREF #REQUIRED>
+<!ATTLIST foreignResource id ID #REQUIRED>
+
+<!ELEMENT libraryCards (libraryCard+)>
+<!ELEMENT libraryCard (UserID, (borrowedForeignResources?), borrowedOwnResources)>
+<!ELEMENT UserID (#PCDATA)>
+
+<!ELEMENT borrowedForeignResources (borrowedForeignResource?)>
+<!ELEMENT borrowedForeignResource (resourceID, owner, borrowDate, returnDate)>
+<!ELEMENT resourceID (#PCDATA)>
+
+<!ELEMENT borrowedOwnResources (borrowedOwnResource+)>
+<!ELEMENT borrowedOwnResource (resourceID, borrower, borrowDate, returnDate)>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image href ENTITY #REQUIRED>
+<!NOTATION jpg PUBLIC "jpg viewer">
+
+<!ELEMENT searchCatalogue (nameFilter, typeFilter, ownerFilter)>
+<!ELEMENT nameFilter (#PCDATA)>
+<!ELEMENT typeFilter (#PCDATA)>
+<!ELEMENT ownerFilter (#PCDATA)>
